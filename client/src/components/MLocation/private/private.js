@@ -38,24 +38,27 @@ class Private extends React.Component {
 				}, () => {
 					//Still using API.checker to avoid taking away the backend checking potential altogether
 					
-					console.log("STEP1COMPLETE")
 					var spentArr = this.props.data.spentIds
 					console.log("spentArr", spentArr)
-					var spent = true;
-					if (spentArr === undefined) {
-						spent = false
-					} else if (spentArr.length) {
-						spent = spentArr.includes(this.state.userId)
-						console.log("AM i here Yet?", spent)
-					}
-					if (spent == false) {
+					var spent;
+					if (spentArr.length == 0) {
+						console.log("Step 1")
 						this.setState({
 							GTG: true
 						}, () => console.log("DONE!", this.state.GTG))
-					} else {
-						return;
+					} else if (spentArr.length > 0) {
+						console.log("Step 1")
+						const checkSpent = spentArr.includes(this.state.userId)
+						console.log("deciding vote", checkSpent)
+						if (checkSpent == false) {
+							this.setState({
+								GTG: true
+							}, () => console.log("DONE!", this.state.GTG))
+						} else {
+							return;
+						}
+						console.log("AM i here Yet?", spent)
 					}
-					
 					// API.checker(checkObj)
 					// 	.then(res => {
 					// 		console.log("CHECKER", res)
