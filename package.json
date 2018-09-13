@@ -1,0 +1,49 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "browser": {
+    "net": "net-browserify"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && yarn install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.17.2",
+    "cloudinary": "^1.11.0",
+    "cloudinary-react": "^1.0.6",
+    "cryptr": "^4.0.0",
+    "express": "^4.15.4",
+    "if-env": "^1.0.4",
+    "moment": "^2.22.2",
+    "mongoose": "^5.0.17",
+    "net-browserify": "^0.2.4",
+    "node-geocoder": "^3.22.0",
+    "prop-types": "^15.6.2",
+    "qrcode.react": "^0.8.0",
+    "react-art": "^16.4.2",
+    "react-art-svg-renderer": "^0.0.1-rc.8",
+    "react-datepicker": "^1.6.0",
+    "react-google-maps": "^9.4.5",
+    "react-places-autocomplete": "^7.2.0",
+    "react-qr-code": "^0.1.2",
+    "recompose": "^0.29.0"
+  }
+}
