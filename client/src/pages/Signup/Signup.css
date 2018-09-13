@@ -1,0 +1,29 @@
+input.date{
+    width: 200px;
+    margin-left: 38px;
+}
+
+p{
+    margin-left: 45px;
+}
+
+.row.passwordRow{
+    margin-bottom: -10px;
+}
+
+input.birthday{
+    
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.btn.signupSubmit {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    border-radius: 150px;
+    width: 200px;
+    height: 40px;
+    margin-top: 150px;
+}

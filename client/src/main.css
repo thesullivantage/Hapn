@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+  /* font-family: 'Cookie', cursive; */
+  font-family: 'Roboto', sans-serif;
+  /* Don't you dare take away my cursive! */
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.profilePhoto {
+  width: 96.1%;
+  padding-left: 52.5px;
+}
+
+.side-nav .userView {
+  padding: 200px 16px 0;
+}
+
+.side-nav .userView {
+  margin-bottom: 0px;
+}
+
+.event-description {
+  margin-left: 0px;
+}
+
+.accept-btn {
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  display: contents;
+}
+
+.btn .waves-effect .waves-light .add-btn {
+  margin: 15px 15px 15px;
+}
+
+.material-icons {
+  padding-left: 0px;
+}
+
+input.location-search-input {
+  width: 650.17px;
+}
+
+.autocomplete-dropdown-container {
+  margin-left: 55px;
+}
+
+.locationColl {
+  margin: 15px;
+}
+
+.container {
+  border-width: 0px;
+}
+

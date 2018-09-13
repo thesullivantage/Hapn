@@ -1,0 +1,70 @@
+body{
+    background-image: url("../../components/chruch.png");
+}
+
+.react-datepicker__input-container {
+    margin-right: 150px;
+    margin-left: 17px;
+}
+
+.react-datepicker__close-icon{
+    display: flex;
+    left: 4px;
+}
+
+.container{
+    /* background-image: url("../../components/chruch.png"); */
+    background-color: white;
+    border: 2px solid rgb(9, 0, 65);
+    margin-top: 10px;
+}
+
+.Logo {
+    /* background-color: rgb(171, 0, 171); */
+    margin-bottom: 200px;
+}
+
+.row {
+    padding: 5px;
+    /* background-color: #d2d2d2 */
+}
+
+#input_7{
+    margin-bottom: 50px;
+}
+
+.btn.Submit{
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+.row.EventNameRow{
+    margin-top: 50px;
+}
+.row.inputRow{
+    display: flex;
+    align-content: center;
+    margin-right: auto;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    /* float: left; */
+}
+
+.row.descriptionRow{
+    clear: both;
+    display: flex;
+    align-content: center;
+    margin-right: auto;
+}
+
+.row.dateRow{
+    margin-bottom: -10px;
+}
+
+.row.photoRow{
+    margin-top: 50px;
+}
+
+input.location-search-input{
+    margin-left: 55px;
+    width: 800px;
+}
